@@ -1,31 +1,72 @@
-    .hello-button{
-      background-color: rgb(80, 80, 255);
-      color: aliceblue;
-      border: none;
-      height: 30px;
-      width: 150px;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    .hello-button:hover{
-      background-color:rgb(54, 54, 253);
-    }
-    .hello-button:active{
-      background-color:rgb(1, 1, 139);
-    }
-    .stutt-text{
-      font-family: arial;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-    }
-    .info-text{
-      font-family: cursive;
-      color: slategray;
-      font-size: larger;
-    }
-    .cool{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #111;
+    color: white;
+}
+
+/* LEFT TEXT */
+.site-title {
+    font-size: 24px;
+}
+
+/* CENTER LOGO */
+.logo {
+    height: 50px;
+}
+
+/* RIGHT MENU */
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+  .hello-button{
+    background-color: rgb(80, 80, 255);
+    color: aliceblue;
+    border: none;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .hello-button:hover{
+    background-color:rgb(54, 54, 253);
+  }
+  .hello-button:active{
+    background-color:rgb(1, 1, 139);
+  }
+  .stutt-text{
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .info-text{
+    font-family: cursive;
+    color: slategray;
+    font-size: larger;
+  }
+  .cool{
       cursor: pointer;
       text-decoration: underline;
       margin-left: 10px;
     }
+.body {
+    font-family: Arial, sans-serif;
+}
+
