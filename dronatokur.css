@@ -57,7 +57,6 @@
   }
   .fyrsta_mynd{
     width: 100vw;
-    height: auto;
     object-fit: cover;
     display: block;
     filter: brightness(50%)
@@ -67,21 +66,20 @@
     background-color: rgb(24, 24, 24);
     color: aliceblue;
     border: none;
-    height: 30px;
-    width: 150px;
-    border-radius: 10px;
+    border-radius: 5vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2vw;
-
+    padding: 2vw;
     cursor: pointer;
   }
   .hello-button:hover{
-    background-color:rgb(54, 54, 253);
+    background-color:rgb(26, 26, 26);
   }
   .hello-button:active{
-    background-color:rgb(1, 1, 139);
+    background-color: white;
+    color: black;
   }
 .hero::after {
   content: "";
@@ -100,9 +98,9 @@
 
 
 
-  .info-text{
-    font-family: cursive;
-    color: slategray;
+  .hver{
+    font-family: arial;
+    color: rgb(255, 255, 255);
     font-size: larger;
   }
   .cool{
