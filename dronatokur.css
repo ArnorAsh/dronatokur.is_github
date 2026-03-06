@@ -984,6 +984,15 @@ body {
     font-size: 14px;
     padding: 11px 18px;
   }
+  .process-item {
+    padding: 18px 14px 18px 55px;
+  }
+
+  .step-number {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
 
   .section-title {
     font-size: 28px;
