@@ -776,7 +776,7 @@ body {
 @media (max-width: 768px) {
 
   /* Header */
-   .header {
+  .header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -881,7 +881,7 @@ body {
   }
 
   .process-steps::before {
-    left: 19px;
+    left: 19px;   /* center of 38px circle */
     top: 30px;
     bottom: 30px;
   }
@@ -891,6 +891,7 @@ body {
   }
 
   .step-number {
+    position: absolute;
     width: 38px;
     height: 38px;
     left: 0;
@@ -925,7 +926,7 @@ body {
 
   .social-links img {
     height: 22px;
-}
+  }
 }
 
 
@@ -984,13 +985,25 @@ body {
     font-size: 14px;
     padding: 11px 18px;
   }
+
+  /* Process */
+  .process-steps::before {
+    left: 17px;   /* center of 34px circle */
+    top: 26px;
+    bottom: 26px;
+  }
+
   .process-item {
     padding: 18px 14px 18px 55px;
   }
 
   .step-number {
+    position: absolute;
     width: 34px;
     height: 34px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 14px;
   }
 
