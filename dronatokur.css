@@ -525,12 +525,6 @@ body {
   justify-content: center;
 }
 
-.about-story {
-  padding: 40px 30px 100px 30px;
-  display: flex;
-  justify-content: center;
-}
-
 .about-container {
   max-width: 800px;
 }
@@ -538,6 +532,7 @@ body {
 .about-title {
   font-size: 48px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .about-text {
