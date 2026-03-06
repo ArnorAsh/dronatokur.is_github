@@ -1,21 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Drónatökur</title>
-        <link rel="stylesheet" href="about.css"> 
-    </head>
-    <body>
-          <header class="header">
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafa samband – Drónatökur.is</title>
+  <link rel="stylesheet" href="dronatokur.css">
+</head>
+<body>
+
+  <header class="header">
     <h1 class="site-title">Drónatökur.is</h1>
 
-    <img src="myndir/logo.png" alt="Logo" class="logo">
+    <img src="myndir/logo.png" alt="Drónatökur.is logo" class="logo">
 
     <nav class="nav">
-        <a href="dronatokur.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <a href="dronatokur.html">Heim</a>
+      <a href="about.html">Um okkur</a>
+      <a href="contact.html">Þjónusta</a>
     </nav>
   </header>
-    <h1>contact info coming soon...</h1>
-    </body>
+
+  <main>
+
+    <section class="contact-hero">
+      <h2>Hafa samband</h2>
+      <p>Sendu okkur skilaboð um verkefnið þitt — við svörum eins fljótt og auðið er.</p>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-grid">
+
+        <!-- LEFT: info -->
+        <div class="contact-card">
+          <h3>Upplýsingar</h3>
+
+        <div class="contact-item">
+          <p class="contact-label">Email</p>
+          <a class="contact-link" href="mailto:info@dronatokur.is">info@dronatokur.is</a>
+        </div>
+
+        <div class="contact-item">
+          <p class="contact-label">Samfélagsmiðlar</p>
+          <p class="contact-text">
+            Þú getur líka haft samband við okkur á samfélagsmiðlum.
+          </p>
+
+          <div class="social-links">
+            <a href="https://www.instagram.com/dronatokur.is" target="_blank">
+              <img src="myndir/insta_logo.png" alt="Instagram">
+            </a>
+
+            <a href="https://www.tiktok.com/@dronatokur.is" target="_blank">
+              <img src="myndir/tiktok_logo.png" alt="TikTok">
+            </a>
+          </div>
+        </div>
+
+          <div class="contact-note">
+            <p><strong>Tip:</strong> Ef þú getur, sendu staðsetningu + dagsetningu + hvað þú vilt fá (myndir / video / klipping).</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: form -->
+        <div class="contact-card">
+          <h3>Sendu skilaboð</h3>
+
+          <!-- Þetta form virkar “visual” en sendir ekki neitt nema þú tengir backend / Formspree o.s.frv. -->
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <label for="name">Nafn</label>
+              <input id="name" name="name" type="text" placeholder="Nafn" required>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Netfang</label>
+              <input id="email" name="email" type="email" placeholder="nafn@domain.is" required>
+            </div>
+
+            <div class="form-row">
+              <label for="type">Tegund verkefnis</label>
+              <select id="type" name="type">
+                <option value="einstaklingur">Einstaklingstaka</option>
+                <option value="vidburdur">Viðburðir</option>
+                <option value="serverkefni">Sérverkefni</option>
+                <option value="annad">Annað</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Skilaboð</label>
+              <textarea id="message" name="message" rows="6" placeholder="Segðu okkur frá verkefninu..." required></textarea>
+            </div>
+
+            <button class="form-button" type="submit">Senda</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>Drónatökur.is</h3>
+      <p>Faglegar drónatökur fyrir öll tilefni.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Flýtileiðir</h4>
+      <a href="dronatokur.html">Heim</a>
+      <a href="about.html">Um okkur</a>
+      <a href="contact.html">Þjónustur</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Hafa samband</h4>
+      <p>Email: info@dronatokur.is</p>
+      <p>Kópavogur, Ísland</p>
+
+    <div class="social-links">
+  <a href="https://www.instagram.com/dronatokur.is" target="_blank">
+    <img src="myndir/insta_logo.png" alt="Instagram">
+  </a>
+
+  <a href="https://www.tiktok.com/@dronatokur.is" target="_blank">
+    <img src="myndir/tiktok_logo.png" alt="TikTok">
+  </a>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Drónatökur.is</p>
+  </div>
+
+</footer>
+
+</body>
 </html>
