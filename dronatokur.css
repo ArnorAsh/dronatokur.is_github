@@ -328,30 +328,7 @@ body {
   line-height: 1.6;
 }
 
-/* Mobile tweaks */
-@media (max-width: 768px) {
-  .process {
-    padding: 90px 20px;
-  }
 
-  .process-item {
-    padding: 22px 18px 22px 64px;
-  }
-
-  .process-steps::before {
-    left: 20px;
-    top: 16px;
-    bottom: 16px;
-  }
-
-  .step-number {
-    width: 40px;
-    height: 40px;
-    left: 0;
-    top: 18px;
-    font-size: 16px;
-  }
-}
 /* ================= CTA ================= */
 
 .cta {
@@ -478,30 +455,6 @@ body {
 .social-links img:hover {
   opacity: 1;
   transform: translateY(-2px);
-}
-/* ================= MOBILE FIX ================= */
-
-@media (max-width: 768px) {
-
-  .main-text {
-    top: 16%;
-    font-size: 32px;
-    white-space: normal;       /* leyfir línuskipti */
-    text-align: center;
-    width: 90%;
-  }
-
-  .hello-button-lineup {
-    top: auto;                 /* SLÖKKVA á top */
-    bottom: 60px;              /* nota bottom */
-    left: 20px;
-    transform: none;           /* ekki translateY */
-    max-width: 90%;
-  }
-
-  .hello-button-text {
-    font-size: 36px;
-  }
 }
 @keyframes heroZoom {
   from {
@@ -742,9 +695,312 @@ body {
   background: rgba(255,255,255,0.20);
 }
 
-/* Mobile */
+/* ================= ALL MOBILE FIXES ================= */
+
+/* Tablet + mobile */
 @media (max-width: 900px) {
+
+  /* Contact page */
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 24px;
+  }
+
+  .contact-section {
+    padding: 30px 20px 80px 20px;
+  }
+
+  .contact-hero {
+    padding: 80px 20px 40px 20px;
+  }
+
+  /* About page */
+  .about-intro {
+    padding: 80px 20px 40px 20px;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .team {
+    padding: 80px 20px;
+  }
+
+  .team-grid {
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .team-card {
+    padding: 24px;
+  }
+
+  /* General sections */
+  .services,
+  .process,
+  .cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .cta-box {
+    padding: 40px 24px;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+    gap: 28px;
+  }
+}
+
+
+/* Phone */
+@media (max-width: 768px) {
+
+  /* Header */
+  .header {
+    padding: 12px 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .site-title {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .logo {
+    height: 34px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .nav a {
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  /* Hero */
+  .hero {
+    height: 85vh;
+    min-height: 560px;
+  }
+
+  .main-text {
+    top: 16%;
+    width: 90%;
+  }
+
+  .main-text span:nth-child(1) {
+    font-size: 34px;
+    line-height: 1.05;
+  }
+
+  .main-text span:nth-child(2) {
+    font-size: 22px;
+    line-height: 1.15;
+    margin-top: 8px;
+  }
+
+  .hello-button-lineup {
+    top: auto;
+    bottom: 42px;
+    left: 20px;
+    right: 20px;
+    transform: none;
+    max-width: none;
+    gap: 14px;
+  }
+
+  .hello-button-text {
+    font-size: 30px;
+    line-height: 1.02;
+  }
+
+  .hello-button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  /* Services */
+  .services {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .service-grid {
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 24px;
+  }
+
+  /* Process */
+  .process {
+    padding: 80px 20px;
+  }
+
+  .process-steps {
+    margin-top: 35px;
+    gap: 20px;
+  }
+
+  .process-steps::before {
+    left: 19px;
+    top: 18px;
+    bottom: 18px;
+  }
+
+  .process-item {
+    padding: 20px 16px 20px 58px;
+  }
+
+  .step-number {
+    width: 38px;
+    height: 38px;
+    left: 0;
+    top: 18px;
+    transform: none;
+    font-size: 15px;
+  }
+
+  /* CTA */
+  .cta {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .cta-box h2 {
+    font-size: 30px;
+  }
+
+  /* Footer */
+  .footer {
+    padding-top: 45px;
+  }
+
+  .footer-bottom {
+    padding: 22px 16px;
+    margin-top: 30px;
+  }
+
+  .social-links {
+    gap: 14px;
+  }
+
+  .social-links img {
+    height: 22px;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  .site-title {
+    font-size: 20px;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .main-text {
+    top: 14%;
+  }
+
+  .main-text span:nth-child(1) {
+    font-size: 28px;
+  }
+
+  .main-text span:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hello-button-text {
+    font-size: 24px;
+  }
+
+  .hello-button-lineup {
+    bottom: 30px;
+    left: 16px;
+    right: 16px;
+  }
+
+  .hello-button {
+    width: fit-content;
+    font-size: 14px;
+    padding: 11px 18px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-text,
+  .team-card p,
+  .process-item p,
+  .service-card p,
+  .contact-text,
+  .contact-note p {
+    font-size: 15px;
+  }
+
+  .contact-card,
+  .team-card,
+  .service-card {
+    padding: 20px;
+  }
+
+  .team-image {
+    width: 72px;
+    height: 72px;
+    font-size: 22px;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+    padding: 11px;
+    font-size: 16px;
   }
 }
