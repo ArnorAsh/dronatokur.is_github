@@ -881,9 +881,9 @@ body {
   }
 
   .process-steps::before {
-    left: 19px;   /* center of 38px circle */
-    top: 30px;
-    bottom: 30px;
+    left: 18px;
+    top: 42px;
+    bottom: 42px;
   }
 
   .process-item {
@@ -988,9 +988,9 @@ body {
 
   /* Process */
   .process-steps::before {
-    left: 17px;   /* center of 34px circle */
-    top: 26px;
-    bottom: 26px;
+    left: 16px;
+    top: 38px;
+    bottom: 38px;
   }
 
   .process-item {
