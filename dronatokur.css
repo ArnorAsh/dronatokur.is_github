@@ -38,6 +38,7 @@ body {
 .logo {
   height: 45px;
   filter: invert(1);
+  margin-left: 5%;  
 }
 
 .nav a {
