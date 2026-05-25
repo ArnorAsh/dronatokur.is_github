@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tölfræði – Drónatökur.is</title>
+  <link rel="stylesheet" href="dronatokur.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="site-title">
+      <a href="index.html" aria-label="Drónatökur.is forsíða">Drónatökur.is</a>
+    </h1>
+
+    <a class="logo-link" href="index.html" aria-label="Forsíða">
+      <img src="myndir/Logo.png" alt="Drónatökur.is merki" class="logo" width="45" height="45">
+    </a>
+
+    <nav class="nav" aria-label="Aðalvalmynd">
+      <a href="index.html">Heim</a>
+      <a href="about.html">Um okkur</a>
+      <a href="contact.html">Hafa samband</a>
+    </nav>
+  </header>
+
+  <main class="stats-page">
+    <section class="stats-box" aria-labelledby="stats-title">
+      <h2 id="stats-title">Heimsóknir</h2>
+      <p>Yfirlit yfir hversu margir hafa heimsótt Drónatökur.is.</p>
+
+      <div class="stats-grid">
+        <article class="stat-card">
+          <div id="last30" class="stat-number">–</div>
+          <div class="stat-label">Síðustu 30 dagar</div>
+        </article>
+
+        <article class="stat-card">
+          <div id="allTime" class="stat-number">–</div>
+          <div class="stat-label">Heimsóknir alls</div>
+        </article>
+      </div>
+
+      <div id="loading" class="stats-loading">Sæki tölur...</div>
+      <div id="error" class="stats-error" role="alert">Villa kom upp við að sækja tölurnar.</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© 2026 Drónatökur.is</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="stats.js" defer></script>
+</body>
+</html>

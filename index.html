@@ -3,140 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Drónatökur.is býður upp á vandaðar drónatökur fyrir einstaklinga, viðburði, fyrirtæki og sérverkefni.">
   <title>Drónatökur.is</title>
+  <link rel="preload" as="image" href="myndir/landscape_fludir.webp" type="image/webp">
   <link rel="stylesheet" href="dronatokur.css">
 </head>
 <body>
-
   <header class="header">
     <h1 class="site-title">
-      <a href="index.html">Drónatökur.is</a>
+      <a href="index.html" aria-label="Drónatökur.is forsíða">Drónatökur.is</a>
     </h1>
 
-    <img src="myndir/Logo.png" alt="Logo" class="logo">
+    <a class="logo-link" href="index.html" aria-label="Forsíða">
+      <img src="myndir/Logo.png" alt="Drónatökur.is merki" class="logo" width="45" height="45">
+    </a>
 
-    <nav class="nav">
-      <a href="index.html">Heim</a>
+    <nav class="nav" aria-label="Aðalvalmynd">
+      <a href="index.html" aria-current="page">Heim</a>
       <a href="about.html">Um okkur</a>
       <a href="contact.html">Hafa samband</a>
     </nav>
   </header>
 
-  <div class="hero">
-    <img src="myndir/landscape_fludir.JPG" alt="mynd1" class="fyrsta_mynd">
+  <main>
+    <section class="hero" aria-label="Drónatökur fyrir öll tilefni">
+      <picture>
+        <source srcset="myndir/landscape_fludir.webp" type="image/webp">
+        <img src="myndir/landscape_fludir.JPG" alt="Drónamynd yfir landslag og tún á Íslandi" class="fyrsta_mynd" fetchpriority="high" decoding="async" width="2048" height="1152">
+      </picture>
 
-    <p class="main-text">
-      <span>Drónatökur</span>
-      <span>Fyrir öll tilefni</span>
-    </p>
-
-    <div class="hello-button-lineup">
-      <p class="hello-button-text">
-        <span>fyrir þig og</span>
-        <span>þitt tilefni</span>
+      <p class="main-text">
+        <span>Drónatökur</span>
+        <span>Fyrir öll tilefni</span>
       </p>
-      <a href="contact.html" class="hello-button">Hafa samband</a>
+
+      <div class="hello-button-lineup">
+        <p class="hello-button-text">
+          <span>fyrir þig og</span>
+          <span>þitt tilefni</span>
+        </p>
+        <a href="contact.html" class="hello-button">Hafa samband</a>
+      </div>
+    </section>
+
+    <section class="services" aria-labelledby="services-title">
+      <h2 class="section-title" id="services-title">Þjónustan okkar</h2>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-slider" data-slider>
+            <picture>
+              <source srcset="myndir/einstakling1.webp" type="image/webp">
+              <img src="myndir/einstakling1.JPG" alt="Drónataka fyrir einstakling á fjórhjóli í íslensku landslagi" class="active" loading="lazy" decoding="async" width="2048" height="1152">
+            </picture>
+            <div class="service-image-overlay"></div>
+          </div>
+          <div class="service-content">
+            <h3>Einstaklingstökur</h3>
+            <p>Drónatökur fyrir einstaklinga og einföld verkefni með hreinu og cinematic útliti.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-slider" data-slider>
+            <picture>
+              <source srcset="myndir/vidburdur1.webp" type="image/webp">
+              <img src="myndir/vidburdur1.JPG" alt="Drónamynd af fjölmennum viðburði utandyra" class="active" loading="lazy" decoding="async" width="2048" height="1152">
+            </picture>
+            <div class="service-image-overlay"></div>
+          </div>
+          <div class="service-content">
+            <h3>Viðburðir</h3>
+            <p>Drónatökur sem sýna stemningu, stærð og augnablikin sem skipta mestu máli.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-slider" data-slider>
+            <picture>
+              <source srcset="myndir/serverkefni1.webp" type="image/webp">
+              <img src="myndir/serverkefni1.png" alt="Drónamynd af æfingu á sjó með björgunarbátum" class="active" loading="lazy" decoding="async" width="1672" height="941">
+            </picture>
+            <div class="service-image-overlay"></div>
+          </div>
+          <div class="service-content">
+            <h3>Sérverkefni</h3>
+            <p>Drónatökur fyrir markaðsefni, fasteignir, fyrirtæki og önnur sérsniðin verkefni.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="process" aria-labelledby="process-title">
+      <h2 class="section-title" id="process-title">Hvernig þetta virkar</h2>
+
+      <div class="process-steps">
+        <article class="process-item">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3>Hafðu samband</h3>
+          <p>Segðu okkur frá verkefninu og hvað þú vilt láta taka upp.</p>
+        </article>
+
+        <article class="process-item">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3>Skipulagning</h3>
+          <p>Við skipuleggjum tökuna og veljum besta stað og tíma.</p>
+        </article>
+
+        <article class="process-item">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3>Drónataka</h3>
+          <p>Við tökum upp efnið með dróna og faglegum búnaði.</p>
+        </article>
+
+        <article class="process-item">
+          <div class="step-number" aria-hidden="true">4</div>
+          <h3>Afhending</h3>
+          <p>Þú færð myndir eða myndband tilbúið til notkunar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="cta-box">
+        <h2 id="cta-title">Tilbúin í drónatöku?</h2>
+        <p>Sendu okkur skilaboð og við finnum lausn sem hentar verkefninu þínu.</p>
+        <a href="contact.html" class="cta-button">Hafa samband</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Drónatökur.is</h3>
+        <p>Faglegar drónatökur fyrir öll tilefni.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Flýtileiðir</h4>
+        <a href="index.html">Heim</a>
+        <a href="about.html">Um okkur</a>
+        <a href="contact.html">Hafa samband</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Hafa samband</h4>
+        <p>Kópavogur, Ísland</p>
+
+        <div class="social-links" aria-label="Samfélagsmiðlar">
+          <a href="https://www.instagram.com/dronatokur.is" target="_blank" rel="noopener noreferrer" aria-label="Instagram Drónatökur.is">
+            <img src="myndir/insta_logo.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+          </a>
+
+          <a href="https://www.tiktok.com/@dronatokur.is" target="_blank" rel="noopener noreferrer" aria-label="TikTok Drónatökur.is">
+            <img src="myndir/tiktok_logo.png" alt="" width="24" height="24" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-<section class="services">
-  <h2 class="section-title">Þjónustan okkar</h2>
 
-  <div class="service-grid">
-    <div class="service-card">
-      <h3>Einstaklingstaka</h3>
-      <p>Drónatökur fyrir einstaklinga og einföld verkefni.</p>
+    <div class="footer-bottom">
+      <p>© 2026 Drónatökur.is</p>
     </div>
+  </footer>
 
-    <div class="service-card">
-      <h3>Viðburðir</h3>
-      <p>Drónatökur sem sýna stemninguna, stærðina og augnablikin sem skipta máli.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>Sérverkefni</h3>
-      <p>Drónatökur fyrir sérstök verkefni, svo sem markaðsefni, fasteignir og fleira.</p>
-    </div>
-  </div>
-</section>
-<section class="process">
-
-  <h2 class="section-title">Hvernig þetta virkar</h2>
-
-  <div class="process-steps">
-
-    <div class="process-item">
-      <div class="step-number">1</div>
-      <h3>Hafðu samband</h3>
-      <p>Segðu okkur frá verkefninu og hvað þú vilt láta taka upp.</p>
-    </div>
-
-    <div class="process-item">
-      <div class="step-number">2</div>
-      <h3>Skipulagning</h3>
-      <p>Við skipuleggjum tökuna og veljum besta stað og tíma.</p>
-    </div>
-
-    <div class="process-item">
-      <div class="step-number">3</div>
-      <h3>Drónataka</h3>
-      <p>Við tökum upp efnið með dróna og faglegum búnaði.</p>
-    </div>
-
-    <div class="process-item">
-      <div class="step-number">4</div>
-      <h3>Afhending</h3>
-      <p>Þú færð myndir eða myndband tilbúið til notkunar.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="cta">
-  <div class="cta-box">
-    <h2>Tilbúin í drónatöku?</h2>
-    <p>Sendu okkur skilaboð og við finnum lausn sem hentar verkefninu þínu.</p>
-    <a href="contact.html" class="cta-button">Hafa samband</a>
-  </div>
-</section>
-
-<footer class="footer">
-
-  <div class="footer-container">
-
-    <div class="footer-brand">
-      <h3>Drónatökur.is</h3>
-      <p>Faglegar drónatökur fyrir öll tilefni.</p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Flýtileiðir</h4>
-      <a href="index.html">Heim</a>
-      <a href="about.html">Um okkur</a>
-      <a href="contact.html">Hafa samband</a>
-    </div>
-
-    <div class="footer-contact">
-      <h4>Hafa samband</h4>
-      <!--<p>Email: info@dronatokur.is</p>-->
-      <p>Kópavogur, Ísland</p>
-
-    <div class="social-links">
-  <a href="https://www.instagram.com/dronatokur.is" target="_blank">
-    <img src="myndir/insta_logo.png" alt="Instagram">
-  </a>
-
-  <a href="https://www.tiktok.com/@dronatokur.is" target="_blank">
-    <img src="myndir/tiktok_logo.png" alt="TikTok">
-  </a>
-</div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 Drónatökur.is</p>
-  </div>
-
-</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="analytics.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>
