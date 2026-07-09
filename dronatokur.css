@@ -336,15 +336,6 @@ textarea {
   transition: opacity 0.28s ease;
 }
 
-.service-card:hover {
-  transform: translateY(-7px);
-  border-color: rgba(255, 255, 255, 0.22);
-  box-shadow: 0 28px 85px rgba(0, 0, 0, 0.58);
-}
-
-.service-card:hover::before {
-  opacity: 1;
-}
 
 .service-slider {
   position: relative;
@@ -377,10 +368,6 @@ textarea {
 .service-slider img.active,
 .service-slider img:only-child {
   opacity: 1;
-}
-
-.service-card:hover .service-slider img.active {
-  transform: scale(1.028);
 }
 
 .service-image-overlay {
@@ -435,6 +422,45 @@ textarea {
   font-size: 15.5px;
 }
 
+
+/* ================= SEO INFO ================= */
+
+.seo-info {
+  display: flex;
+  justify-content: center;
+  padding: 35px 30px 110px;
+}
+
+.seo-info-container {
+  width: min(100%, 920px);
+  padding: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.03)),
+    rgb(18, 18, 18);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.38);
+  text-align: left;
+}
+
+.seo-info h2 {
+  margin-bottom: 18px;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.seo-info p:not(.eyebrow) {
+  max-width: 78ch;
+  color: var(--color-text-muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.seo-info p + p {
+  margin-top: 16px;
+}
+
 /* ================= PROCESS ================= */
 
 .process-steps {
@@ -463,13 +489,6 @@ textarea {
   padding: 26px 26px 26px 70px;
   border-radius: 14px;
   transition: transform var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
-}
-
-.process-item:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 14px 50px rgba(0, 0, 0, 0.45);
 }
 
 .step-number {
@@ -999,6 +1018,21 @@ textarea {
     padding: 24px;
   }
 
+
+
+  .seo-info {
+    padding: 20px 20px 80px;
+  }
+
+  .seo-info-container {
+    padding: 28px 24px;
+  }
+
+  .seo-info p:not(.eyebrow) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
   .services,
   .cta {
     padding-right: 20px;
@@ -1110,6 +1144,16 @@ textarea {
   .service-slider {
     aspect-ratio: 16 / 10;
   }
+
+  .seo-info {
+    padding: 10px 16px 65px;
+  }
+
+  .seo-info-container {
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+
 
 
   .process-steps {
